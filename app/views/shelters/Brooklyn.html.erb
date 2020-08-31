@@ -3,9 +3,9 @@
 
 <% Shelter.all.each do |s| %>
 <% if s.location == 'Brooklyn' %>
-Name: <%= link_to s.name, s %> <br>
+<h3> Name: <%= link_to s.name, s %> </h3> <br>
 <% end %>
 <% end %>
 
 
-<p><%= link_to  "View All Shelters", shelters_path %></p>
+<button><%= link_to  "View All Shelters", shelters_path %></button>

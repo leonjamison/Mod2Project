@@ -1,9 +1,9 @@
 <h1> Appointment Confirmation </h1>
 <%= video_tag "homepagedog.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, playsinline: :playsinline, class: "home_video" %>
-<p> Pet Name: <%= @appointment.pet.name %>
-<p> Shelter Name: <%= @appointment.pet.shelter.name %>
-<p> Location: <%= @appointment.pet.shelter.location %>
-<p> Date and Time: <%= @appointment.date_time %>
+<h3> Pet Name: <%= @appointment.pet.name %>
+<h3> Shelter Name: <%= @appointment.pet.shelter.name %>
+<h3> Location: <%= @appointment.pet.shelter.location %>
+<h3> Date and Time: <%= @appointment.date_time %>
 
 <br>
 <p><%= link_to  "Return To User Page", user_path %><p>

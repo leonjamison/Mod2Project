@@ -1,10 +1,10 @@
-<h1> Welcome To "Puppy Love" <%= @user.name %> ! </h1>
+<h1> Welcome To "Puppy Love 🐶" <%= @user.name %> ! </h1>
 <%= video_tag "homepagedog.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, playsinline: :playsinline, class: "home_video" %>
 
 <br>
-<h3>Current Location Is:  <%= @user.location %></h3>
+<h3>Current Location:  <%= @user.location %> NY</h3>
 
-<h3><p>Scheduled Appointments: <p></h3>
+<h3><p>Scheduled Appointments 📅: <p></h3>
 <% @user.appointments.each do |a|%>
 Date/Time: <%= link_to a.date_time, a %><br>
  <% end %>
@@ -12,7 +12,7 @@ Date/Time: <%= link_to a.date_time, a %><br>
 
 <h3> Puppy Love Shelters </h3>
     <p>Nearest Shelter: <%= link_to "#{@user.location} Shelters", "/#{@user.location}" %></p>
-    <p>All Shelters: <%= link_to  "View All", shelters_path %></p>
+    <p>All Affiliated Shelters: <%= link_to  "View All", shelters_path %></p>
     <br>
     <br>
     <% if current_user == @user %>

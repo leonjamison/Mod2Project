@@ -3,7 +3,7 @@
 
 <% Shelter.all.each do |s| %>
 <% if s.location == 'Queens' %>
-Name: <%= link_to s.name, s %> <br>
+<h3>Name: <%= link_to s.name, s %></h3> <br>
 <% end %>
 <% end %>
 
